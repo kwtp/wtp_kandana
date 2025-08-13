@@ -42,6 +42,19 @@
             display: block; /* Removes extra space below image */
             object-fit: cover; /* Ensures image covers the area without distortion */
         }
+		@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.shimmer-text {
+  background: linear-gradient(to right, #3b82f6, #67e8f9, #2563eb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
     </style>
 </head>
 <body class="antialiased">
@@ -53,7 +66,7 @@
          alt="Water Board Logo" class="w-20 h-20 object-contain">
 
     <!-- Heading -->
-    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center shimmer-text">
         Kandana Water Treatment Plant
     </h1>
 </header>
@@ -145,6 +158,7 @@
     </div>
 </body>
 </html>
+
 
 
 
