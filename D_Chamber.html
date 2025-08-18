@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>කඳන ජලපවිත්‍රාගාරය</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+        }
+        .container {
+            max-width: 960px; /* Max width for content */
+        }
+        /* Custom styles for better readability and aesthetics */
+        h1, h2 {
+            color: #1e3a8a; /* Dark blue for headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .image-container { /* Renamed from image-placeholder for clarity */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem; /* rounded-md */
+            margin-top: 1rem; /* mt-4 */
+            overflow: hidden; /* Ensures image respects border-radius */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below image */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+		@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.shimmer-text {
+  background: linear-gradient(to right, #3b82f6, #67e8f9, #2563eb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+    </style>
+	
+</head>
+<body class="antialiased">
+	
+	
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+        <!-- Header Section -->
+        <header class="flex items-center space-x-4 mb-10">
+    <!-- Logo -->
+    <img src="https://raw.githubusercontent.com/kwtp/wtp_kandana/refs/heads/main/NWSDB_logo.png" 
+         alt="Water Board Logo" class="w-20 h-20 object-contain">
+
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center shimmer-text">
+        Kandana Water Treatment Plant
+    </h1>
+	
+</header>
+<nav class="max-w-6xl mx-auto px-4 py-3 flex justify-center space-x-6">
+        <a href="Index.html" class="text-blue-700 font-semibold hover:text-blue-500">Intake</a>
+        <a href="D_Chamber.html" class="text-blue-700 font-semibold hover:text-blue-500">D-Chamber</a>
+        <a href="Sedimentation.html" class="text-blue-700 font-semibold hover:text-blue-500">Sedimentation</a>
+        <a href="Filter.html" class="text-blue-700 font-semibold hover:text-blue-500">Filtration</a>
+    </nav>
+			<section class="card">
+			<h2 class="text-xl md:text-xl font-bold mb-4 text-left">
+    
+        <!-- Main Content Section -->
+       
+	 <main>
+            <section class="card">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center">
+                    02. Distribution Chamber (බෙදුම් කුටීරය)
+                </h1>
+               <p class="text-sm text-gray-700 text-justify">
+                  තුළු මුවෙහි (Intake) සිට අමු ජල පොම්ප (Raw Water Pumps) මගින් පොම්ප කරනු ලැබූ අමුජලය (Raw Water) 1000mm DI නළ තුළින් පැමිණ මෙම ස්ථානයේ ඇති Receiving Well තුළට පැමිණේ.  
+මීට අමතරව වැලිපෙරණ (sand filters) සෝදා ගැනීමට යොදා ගත් නිරවුල් ජලය (Backwash Recovery Supernatant Water) නැවත මෙම ස්ථානයටම එක්වීම සිදුවේ.<br><br>
+මෙම ස්ථානයේදී ජලපිරිහදු කිරීමට අවශ්‍ය පහත ක්‍රියාවලීන් ප්‍රධානවශයෙන් සිදුකරයි.<br><br>
+1. Pre Chlorination (පෙර ක්ලෝරීන් යෙදීම)<br>
+2. pH Adjustment (අමු අජලයේ pH අගය සැකසීම)<br>
+3. Alum Dosing (ඇලම් අමුජලයට මුසු කිරීම)<br>
+4.  Cogulation (ක්ෂණික කලවම් කිරීම)<br>
+5.  Flocculation (කුඩා අංශු විශාල පොකුරු බවට පත්වීම)<br>
+6. Sedimentation (පතුලට තැන්පත් වීම)<br><br>
+<h2 class="text-xl md:text-xl font-bold mb-4">
+                    1. Pre Chlorination (පෙර ක්ලෝරීන් යෙදීම)
+                </h2>
+<p class="text-sm text-gray-700 text-justify">
+	Pre Chlorination කිරීම මගින් අමු ජලයේ ඇති අහිතකර බැක්ටීරියා වර්ග ,ඇල්ගී වැනි ජෛව ද්‍රව්‍ය අරම්භයේදීම ඉවත් කිරීමට හැකිවනු ඇත. එසේම ක්ලෝරීන් යනු හොද ඔක්සිකාරකයක් බැවින් ජලයේ දියවී ඇති අයන ඔක්සිකරනය කිරීම මගින් ඒවා ඉවත් කිරීමද සිදුවේ. එමෙන්ම, ජලයේ ඇති අප්‍රිය ගඳද මෙය මගින් අඩු කරයි.<br> 
+නමුත් ක්ලෝරීන් සඳහා ඉතා විශාල වියදමක් යන බැවින් අවශ්‍ය අවස්ථාවලදී  පමණක් pre cholrine යෙදවීම සිදුකරයි.</p>
+
+<h2 class="text-xl md:text-xl font-bold mb-4">
+                    <br>2. pH Adjustment (අමු අජලයේ pH අගය සැකසීම)
+                </h2>
+ <p class="text-sm text-gray-700 text-justify">
+	මෙම පවිත්‍රාගාරයේ කැටිති කාරකය (Coagulant) ලෙස භාවිතා කරන ඇලම් වල ක්‍රියාකාරීත්වය උපරිම මට්ටමක පවත්වා ගැනීම සඳහා එයට සුදුසු pH පරාසය වන 6.0ත් 7.5ත් අතර අගයක අමු ජලයේ pH අගය පවත්වා ගත යුතුය. අමු ජලයේ pH අගය එම පරාසය තුළ නොමැති අවස්ථාවලදී එය සැකසීම සඳහා හුණු (Lime) යෙදීම සිදුකරයි.
+මෙමගින් ඇලම් වල ඉහල ක්‍රියාකාරීත්වයක් ලබා ගත හැකි වන අතර chemical භාවිතය අඩු කිරීම මගින් ඒ සඳහා යන වියදමද අඩු කරගත හැකිය. එසේම නල වලට හා ටැංකිවලට ආම්ලික ජලය මගින් සිදුවිය හැකි හානියද අවම කරගත හැකිය.<br> </p>
+		
+			<div class="image-container">
+                    <img src="Image/Pre_Lime_Pump.jpeg" alt="Image of a Pre Lime Pump">
+                </div>
+<h2 class="text-xl md:text-xl font-bold mb-4">
+                    <br>3. Alum Dosing (ඇලම් අමුජලයට මුසු කිරීම)
+                </h2>
+	<p class="text-sm text-gray-700 text-justify">
+	නිවැරදි pH අගය සකසා ගත් අමු ජලයෙහි ඇති මඩ ගතිය ඉවත් කිරීම සඳහා මඩ කැටිති (flocs) සාඳා ගැනීමට  භාවිතා වන කැටිකාරකය(coagulants) වන ඇලම් (Alum හෙවත් Aluminium Sulphate [Al₂(SO₄)₃]) යෙදීම මෙහි ඊලග පියවරයි.
+<br> අමුජලයේ ස්වභාවය මත යෙදිය යුතු ඇලම් ප්‍රමාණය වෙනස්වේ.  JAR Test පරීක්ෂණයකින් අනතුරුව යෙදිය යුතු ප්‍රශස්ථ ඇලම් ප්‍රමාණය තීරණය කරයි.
+                </p>
+		<div class="image-container">
+                    <img src="Image/Alum_Dis.jpeg" alt="Image of a Alum Distribution Chamber">
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-xl font-bold mb-4">
+                    4.  Cogulation (ක්ෂණික කලවම් කිරීම) 
+                </h2>
+                <ul class="text-sm text-gray-700 text-justify">
+                    <li>
+                        ඇලම් වල ප්‍රතික්‍රියා කාලය තත්පර 0.2ක් වැනි ඉතා කුඩා කාලයක් බැවින් ජලය සමග මුසුවූ විගස එය ඉතා ඉක්මනින් මිශ්‍රකිරීම සිදුකල යුතුය. කඳන ජලපවිත්‍රාගාරයේ මේ සඳහා ජල පිම්ම (hydraulic jump) ක්‍රමය භාවිතා කරයි.<br>
+	<br> මේ සඳහා Weir arrangement එකක් භාවිතා කර ඇති අතර මෙමගින් අමුජලය( Raw Water) සමාන කොටස් හයකට බෙදී යන අතර ජලය පහලට වැටීමක් සිදුවීම මගින් ක්ෂණික මිශ්‍රණයක් සිදුවේ (G value is approximately 400 s-1). 
+	 එම නිසා මෙම ස්ථානයේදී ඇලම් (Alum) යෙදීම සිදුකරන අතර ඇලම් සමග හොදින් මිශ්‍ර වූ ජලය කැටිකාරක ටැංකි (Flocculation Tank) වෙත යොමු වීම සිදුවේ.
+                    </li>
+                    
+                </ul>
+                <div class="image-container">
+                    
+                  <img src="Image/Hydrolic_Jump 2.jpeg" alt="ජල පිම්ම රූපයක් (Image of a Hydrolic jump)">
+                </div>
+            </section>
+
+            
+            <section class="card bg-gray-200 p-4 rounded-lg">
+                <h2 class="text-xl md:text-xl font-bold mb-4 text-brown-700 text-center">
+                    Chemical Reaction of Alum with Water (ඇලම් සමග ජලයේ ප්‍රතික්‍රියාව)
+                </h2>
+                <ul class="text-sm text-sky-400 text-justify">
+                    <li>
+                        
+
+ඇලම් යනු රසායනිකව ඇලුමිනියම් සල්ෆේට් (aluminium sulfate) වන අතර, එය ජලය පිරිසිදු කිරීමේදී ඉතා වැදගත් කාර්යයක් ඉටු කරයි. ඇලම් ජලයට එකතු කළ විට සිදුවන ක්‍රියාවලිය "පොකුරු ගැසීම" හෝ "skrumping" ලෙස හැඳින්වේ.<br>
+
+<br><strong>1.  ධන ආරෝපිත අයන මුදාහැරීම:</strong><br> <br>
+&emsp;&emsp;&emsp;ඇලම් (aluminium sulfate) ජලය සමග මිශ්‍ර වූ විට, එය ජලයේ අඩංගු අණු සමග ප්‍රතික්‍රියා කර, ධන ආරෝපිත ඇලුමිනියම් අයන (Al3+ ) මුදාහරී.<br>
+
+<br>2.  අංශු උදාසීන කිරීම: <br><br>
+&emsp;&emsp;&emsp;අමු ජලයේ අඩංගු කුඩා අංශු (clay, silt, organic matter) සාමාන්‍යයෙන් සෘණ ආරෝපිත (negatively charged)වේ. මෙම සෘණ ආරෝපණය නිසා එම අංශු එකිනෙකා විකර්ෂණය කරමින් ජලයේ විසිරී පවතී. ඇලම් මගින් මුදා හරින ධන ආරෝපිත ඇලුමිනියම් අයන, මෙම සෘණ ආරෝපිත අංශු සමග සම්බන්ධ වී ඒවායේ ආරෝපණය උදාසීන කරයි.<br>
+  <div class="image-container">
+                 <img src="Image/Alum.jpg" alt="Image of Alum Reaction">
+                </div>
+</section>
+<section class="card">
+<h2 class="text-xl md:text-xl font-bold mb-4">
+                    <br>5. Flocculation (කුඩා අංශු විශාල පොකුරු බවට කිරීම)
+                </h2>
+ <ul class="text-sm text-gray-700 text-justify">
+                    <li>
+ඇලුමිනියම් අයන සමග එක්වීමෙන් ආරෝපණය උදාසීන වූ පසු, එම කුඩා අංශු එකිනෙකා සමග පහසුවෙන් එකතු වේ. මෙහිදී මෙම කුඩා අංශු එකතු වී විශාල  බර පොකුරු (flocs) බවට පත්වේ. මෙම පොකුරු පියවි ඇසට පෙනෙන තරමට විශාල විය හැකිය. මෙම ක්‍රියාවලිය flocculation ලෙස හැදින්වේ.<br>
+<br> මෙසේ විශාල පොකුරු සෑදීමට නම් මෙම කුඩා අංශු එකිනෙකා ලංවීම හා ගැටීම සිදුවිය යුතුය. මේ සඳහා කඳන ජලපවිත්‍රාගාරය තුළ Conventional Flocculation ක්‍රමය භාවිතා කරයි. එනම් වර්ගඵලය අඩු ටැංකියක සිට ක්‍රමානුකූල්ව වැඩි ටැංකියක් වෙත ජලය ගලායාමට සැලැස්වීම. මෙහිදී වර්ගඵලය අඩු ටැංකියේ ජලයේ වේගය වැඩිවෙන අතර ක්‍රමයෙන් විශාල ටැංකි වෙත පැමිණීමේදී ජලයේ වේගය අඩුවේ. මෙහිදී කුඩා ටැංකි වලදී ඉතා කුඩා මඩ අංශු එකිනෙක ඇලී විශාල මඩ අංශු සෑදීම සිදුවෙන අතර විශාල ටැංකි තුළදී මෙම විශාල මඩ අංශු තවදුරටත් එකිනෙක එක්වි තවත් විශාල ඇසට පෙනෙන මඩ අංශු බවට පත්වීම සිදුවේ. 
+මේසේ සෑදුණු විශාල මඩ අංශු තැම්පත් කර ගැනීම සඳහා Sedimentation ටැංකි තුළට යොමු කිරීම සිදුකරයි.<br>
+<div class="image-container">
+                 <img src="Image/Floculation.jpeg" alt="Image of Flocculation Tanks">
+                </div>
+<h2 class="text-xl md:text-xl font-bold mb-4">
+                    <br>6. Sedimentation (පතුලට තැන්පත් වීම)
+                </h2>
+ <ul class="text-sm text-gray-700 text-justify">
+                    <li>
+මෙම විශාල, බර පොකුරු ජලයට වඩා ඝනත්වයෙන් වැඩි බැවින්, ඒවා ගුරුත්වාකර්ෂණය හේතුවෙන් ජලයේ පතුලට තැන්පත් වේ. මෙම ක්‍රියාවලිය තැන්පත් වීම (sedimentation) ලෙස හැඳින්වේ. කඳන ජලපවිත්‍රාගාරය තුළ මේ සඳහා විශාල ප්‍රමාණයේ Sedimentation ටැංකි හයක් (06) භාවිතා කරයි.
+                    </li>
+                </ul>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <img src="Image/Sedimentation_02.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <img src="Image/Sedimetation_3.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+       
+    </div>
+                
+            </section>
+
+           
+
+        </main>
+
+        <!-- Footer Section (Optional) -->
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>&copy; 2025 කඳන ජල ජලපවිත්‍රාගාරය. සියලුම හිමිකම් ඇවිරිණි.</p>
+        </footer>
+    </div>
+</body>
+</html>

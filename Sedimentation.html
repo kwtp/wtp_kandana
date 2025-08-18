@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>කඳන ජලපවිත්‍රාගාරය</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+        }
+        .container {
+            max-width: 960px; /* Max width for content */
+        }
+        /* Custom styles for better readability and aesthetics */
+        h1, h2 {
+            color: #1e3a8a; /* Dark blue for headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .image-container { /* Renamed from image-placeholder for clarity */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem; /* rounded-md */
+            margin-top: 1rem; /* mt-4 */
+            overflow: hidden; /* Ensures image respects border-radius */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below image */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+		@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.shimmer-text {
+  background: linear-gradient(to right, #3b82f6, #67e8f9, #2563eb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+    </style>
+</head>
+
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+        <!-- Header Section -->
+        <header class="flex items-center space-x-4 mb-10">
+    <!-- Logo -->
+    <img src="https://raw.githubusercontent.com/kwtp/wtp_kandana/refs/heads/main/NWSDB_logo.png" 
+         alt="Water Board Logo" class="w-20 h-20 object-contain">
+
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center shimmer-text">
+        Kandana Water Treatment Plant
+    </h1>
+</header>
+<nav class="max-w-6xl mx-auto px-4 py-3 flex justify-center space-x-6">
+        <a href="Index.html" class="text-blue-700 font-semibold hover:text-blue-500">Intake</a>
+        <a href="D_Chamber.html" class="text-blue-700 font-semibold hover:text-blue-500">D-Chamber</a>
+        <a href="Sedimentation.html" class="text-blue-700 font-semibold hover:text-blue-500">Sedimentation</a>
+        <a href="Filter.html" class="text-blue-700 font-semibold hover:text-blue-500">Filtration</a>
+    </nav>
+			<section class="card">
+			<h2 class="text-xl md:text-xl font-bold mb-4 text-left">
+    
+
+        <!-- Main Content Section -->
+        <main>
+            <section class="card">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center">
+    03. Sedimentation
+</h1>
+               <p class="text-sm text-gray-700 text-justify">
+                 Flocculation ක්‍රියාවලින්යෙන් පසු මඩ කැටිති (flocs) සෑදුණු  ජලය sedimentation tank තුළට ඇතුල්වීම සිදුවේ. මෙහි ප්‍රධාන අරමුණ මඩ කැටිති තැම්පත් කර ගැනීමයි (settlment). <br>මේ සඳහා කඳන ජල පවිත්‍රාගාරය තුළ  sedimentation ටැංකි 6ක් භාවිතා කරයි.
+මෙම ටැංකිය තුලදී ජලය තිරස් අතට ගලායන අතර මඩ අංශු ගුරුත්වය යටතේ සිරස් අතට ගමන්කර පතුලේ තැම්පත් වීම සිදුවේ.
+මෙසේ තැම්පත්වන මඩ ස්ක්‍රේපර් (Sludge Scraper) මගින් මෙම ටැංකියේ මුල කෙලවරේ ඇති මඩ වල (Sludge Pocket)වෙත ඇදගෙන ගොස් දැමීම නිරන්තරයෙන්ම සිදුකරයි. මෙම වලෙහි මඩ ඉවත් කිරීමට එක් ටැංකියකට හතර බැගින්sludge valves සම්බන්ධ කර ඇත. මේවා වරින් වර වරකට එක බැගින් විවෘතවී මඩ වලෙහි එකතුවෙන මඩ ඉන් ඉවත්කිරීම සිදුකරයි. මෙසේ ඉවත් වන මඩ Balancing Tank එක වෙත එකතු වීම සිදුවේ.<br><br>
+මඩ ඉවත් වී පැහැදුණු ජලය (Settle Water) ටැංකිය කෙලවරින් ඉවත් වීම සිදුවේ. මෙම ඉවත් වන ජලයේද ඉතා කුඩා ප්‍රමාණයේ මඩ කැඩිති (fine particals) දැක ගැනීමට හැකිවේ. මෙම ඉතා කුඩා මඩ කැඩිති ඉවත්කර ගැනීම සඳහා මෙම ජලය වැලි පෙරණ (Sand Filters) වෙත යොමු කිරීම සිදුකරයි.
+<br><br> 
+Sedimentation ටැංකියට පැමිණෙන ජලයේ (focculated water) හා පිටවන ජලයේ (Settled water)ගුණාත්මකභාවය පැය විසිහතර පුරාම  sensor මගින් (pH / Turbidity) නිරීෂණය   කරන අතර ප්‍රධාන පාලක පද්ධතියේ (SCADA) සටහන්වේ. 
+මීට අමතරව අවශ්‍යතාවකදී මෙම ටැංකිවලින් පිටවෙන ජලයට ක්ලෝරීන් මුසුකිරීමේ (Intermediate chlorination) පහසුකමද  සපයා ඇත. <br><br>
+
+
+		<div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+        <img src="Image/Sedimentation_02.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <img src="Image/Sedimentation_04.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <img src="Image/Sludge_Valve (2).jpeg" alt="Image of Sludge Valve" class="rounded-lg shadow">
+        <img src="Image/Sedimentation_04.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+    
+            </section>
+
+            <section class="card">
+                <h2 class="text-L md:text-L font-bold mb-4">
+                   Details of the Sedimentation System 
+                </h2>
+                <ul class="text-sm text-gray-700 text-justify">
+                    <li>
+			Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:	Rectangular plug flow<br>
+			No of Tanks&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;: 6 Nos<br>
+                        Tank Dimensions&emsp;&emsp;&emsp;&emsp;&emsp;:	10m (W) x 50 m (L) x 4m to 5 m (Eff. Depth)<br>
+			Surface loading	&emsp;	&emsp;&emsp;&emsp;&emsp;:	29.2 mm/min < 30 mm/min <br>
+			Passing  velocity&emsp;&emsp;&emsp;&emsp;&emsp; :	0.365 m/min < 0.4 m/min <br>
+			Detention time&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:	2.3 h <br>
+			Sedimentation outflow&emsp;&emsp;:	375m3/m/d < 400 m3/ m/d  <br>
+			Sludge collection pit&emsp;&emsp;&emsp; : 4 Nos of 300x350x400mm(WxDxL)pits in one tank<br>
+			Baffle wall&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: One for inflow and one for effluent of basins
+                    </li>
+                    
+                </ul>
+                
+            </section>
+
+            
+            <section class="card bg-gray-200 p-4 rounded-lg">
+                <h2 class="text-xl md:text-xl font-bold mb-4 text-brown-700 text-center">
+                    Theory Behind Sedimentation
+                </h2>
+                <ul class="text-sm text-sky-400 text-justify">
+                    <li>
+                        
+<h2 class="text-L md:text-L font-bold mb-4">
+Stokes’ Law
+</h>
+
+<ul class="text-sm text-sky-400 text-justify">
+                    <li>
+<br>The process follows Stokes’ Law, which states that the settling velocity of a particle in a fluid depends on:
+
+<br>&emsp;&emsp;1. Particle size&emsp;&emsp;&emsp;&emsp; -larger particles settle faster
+<br>&emsp;&emsp;2. Particle density&emsp;&emsp; -heavier particles settle faster
+<br>&emsp;&emsp;3. Viscosity of water&emsp;-colder, more viscous water slows settling
+<br>&emsp;&emsp;4. Gravity&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; -constant on Earth, but the main driving force
+<br>In simple terms, the bigger and denser the particle, the faster it will settle.<br><br> </li>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <img src="Image/Sedimentation_Stracture.png" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <img src="Image/Sedimentation_Stracture3.png" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <img src="Image/Sedimentation_Stracture 2.png" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+                </div>
+<h2 class="text-L md:text-L font-bold mb-4">
+<br><br>Types of Sedimentation
+</h2>
+&emsp;&emsp;&emsp;Type I&emsp;&nbsp;&nbsp;&nbsp;- Discrete Settling&emsp;&emsp;&emsp;&emsp;&nbsp : Particles settle individually without interacting (e.g., sand).<br>
+
+&emsp;&emsp;&emsp;Type II&emsp;&nbsp - Flocculent Settling&emsp;&emsp;&emsp;&nbsp : Particles clump together (flocculate) and settle faster.<br>
+
+&emsp;&emsp;&emsp;Type III&emsp;&nbsp;- Zone Settling&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: Particles settle as a mass or blanket.<br>
+
+&emsp;&emsp;&emsp;Type IV&emsp;- Compression Settling&emsp;&emsp;: Occurs when particles are compressed at the bottom due to the weight above.<br><br>
+
+
+<h2 class="text-L md:text-L font-bold mb-4">
+Importance of Sedimentation
+</h>
+
+<ul class="text-sm text-sky-400 text-justify">
+                    <li>
+<br>&emsp;&emsp;&emsp;Improves water clarity
+
+<br>&emsp;&emsp;&emsp;Reduces load on downstream sand filters
+
+<br>&emsp;&emsp;&emsp;Removes disease-causing organisms attached to particles
+
+<br>&emsp;&emsp;&emsp;Lowers chemical usage in later treatment stages (Chlorine)
+</li>
+</section>
+
+
+           
+
+        </main>
+
+        <!-- Footer Section (Optional) -->
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>&copy; 2025 කඳන ජල ජලපවිත්‍රාගාරය. සියලුම හිමිකම් ඇවිරිණි.</p>
+        </footer>
+    </div>
+</body>
+</html>

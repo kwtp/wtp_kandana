@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>කඳන ජලපවිත්‍රාගාරය</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+        }
+        .container {
+            max-width: 960px; /* Max width for content */
+        }
+        /* Custom styles for better readability and aesthetics */
+        h1, h2 {
+            color: #1e3a8a; /* Dark blue for headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .image-container { /* Renamed from image-placeholder for clarity */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem; /* rounded-md */
+            margin-top: 1rem; /* mt-4 */
+            overflow: hidden; /* Ensures image respects border-radius */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below image */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+		@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.shimmer-text {
+  background: linear-gradient(to right, #3b82f6, #67e8f9, #2563eb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+    </style>
+</head>
+
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+        <!-- Header Section -->
+        <header class="flex items-center space-x-4 mb-10">
+    <!-- Logo -->
+    <img src="https://raw.githubusercontent.com/kwtp/wtp_kandana/refs/heads/main/NWSDB_logo.png" 
+         alt="Water Board Logo" class="w-20 h-20 object-contain">
+
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center shimmer-text">
+        Kandana Water Treatment Plant
+    </h1>
+</header>
+<nav class="max-w-6xl mx-auto px-4 py-3 flex justify-center space-x-6">
+        <a href="Index.html" class="text-blue-700 font-semibold hover:text-blue-500">Intake</a>
+        <a href="D_Chamber.html" class="text-blue-700 font-semibold hover:text-blue-500">D-Chamber</a>
+        <a href="Sedimentation.html" class="text-blue-700 font-semibold hover:text-blue-500">Sedimentation</a>
+        <a href="#filtration" class="text-blue-700 font-semibold hover:text-blue-500">Filtration</a>
+    </nav>
+			<section class="card">
+			<h2 class="text-xl md:text-xl font-bold mb-4 text-left">
+    
+
+        <!-- Main Content Section -->
+        <main>
+            <section class="card">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center">
+    05. Filtration
+</h1>
+               <p class="text-sm text-gray-700 text-justify">
+                  Sedimentation ටැංකි තුලදී තැම්පත් නොවූ ඉතා කුඩා මඩ අංශු( Fine Particles) ඉවත් කර ගැනීම සඳහා මෙම ජලය පෙරීමකට ලක් කල යුතුවෙනවා. ඒ සඳහා කඳන ජලපවිත්‍රාගාරය තුළ වැලි පෙරණ (Sand Filters) අටක් පවතී. <br><br>
+බරින් වැඩි මඩ(suspended solids) Sedimentation ටැංකිවල තැම්පත් වීමෙන් අනතුරුව ඉතා කුඩා මඩ අංශු සහිතව Sedimentation ටැංකි වලින් පිටවන ජලය(settled water) පොදු නළයක් (common channel) දිගේ පැමිණ වැලි පෙරණ (sand filters) අට වෙත බෙදී යාම සිදුවේ. 
+මෙසේ වැලි පෙරණ තුළට ඇතුල්වල ජලය මීටර් එකක් පමණ උසින් යුත් වැලි තට්ටුව හරහා ගොස් පහතින් ඇති පොදු ටැංකියක් වෙත එකතුවීම සිදුවේ. 
+මෙසේ වැලි හරහා ගමන් කිරීමේදී, <br>
+&emsp;&emsp;&emsp;* Sedimentation ටැංකිවලින් පසු ඉතිරිවන fine particles ඉවත් කරයි.<br>
+&emsp;&emsp;&emsp;* ජලයේ පැහැපත්භාවය (clarity) වැඩි කරයි.<br>
+&emsp;&emsp;&emsp;* රස සහ ගඳ වලට බලපාන කුඩා අමුද්‍රව්‍ය ඉවත් කරයි.<br>
+&emsp;&emsp;&emsp;* නිවාස හා කර්මාන්ත ශාලා වෙත යන ජලය තවත් පිරිසිදු කරයි.<br><br>
+
+					මෙසේ වැලිපෙරණ වලින් පෙරී එන පිරිසිදු ජලයහි ආම්ලිකතාවය (pH අගය) නිවැරදි පරාසයට ගෙන ඒම සඳහා හුණු (post lime) මිශ්‍ර කිරීම සිදුකරයි. මේ සඳහා සංතෘප්ත හුණු (saturated lime)භාවිතා කරන අතර සංතෘප්ත හුණු සෑදීම සඳහා Lime Saturator එකක් භාවිතා කරයි.<br>
+				<br> ඉන් අනතුරුව ජලයෙහි පවතින  රෝගකාරක ක්ෂුද්‍ර ජීවීන් (microorganisms) විනාශ කිරීමට ක්ලෝරීන් යෙදීම (chlorination) සිදුකරයි. මේ සඳහා ක්ලෝරීන් වායුව (chorine gas) භාවිතා කරයි.
+				<br><br>
+				ක්ලෝරීන් එක් කරනු ලැබූ ජලය කඳන ජලපවිත්‍රාගාරයේ ඇති පිරිසිදු ජල ටැංකියවෙත (Treated Water Tank [6400 m3]) යොමු කරන අතර එම ජලය High Lift Pumps මගින් ඇල්ල කන්ඳ ජල ටැංකිය (High Level Reservior [15000 m3) වෙත පොම්ප කිරීම සිදුකරයි.<br><br>
+<div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+        <img src="Image/Sand_Filter_1.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <img src="Image/Sand_Filter_2.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <img src="Image/Sludge_Valve (2).jpeg" alt="Image of Sludge Valve" class="rounded-lg shadow">
+        <img src="Image/Sedimentation_04.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+    
+            </section>
+			<section class="p-6 bg-green-50 rounded-xl shadow">
+
+<h2 class="text-L md:text-L font-bold mb-4">
+                   වැලි පෙරණ පිරිසිදු කිරීම (Backwash) 
+                </h2>
+				<p class="text-sm text-gray-700 text-justify">
+				වැලි පෙරණ තුළින් යම් කාලයක් ජලය ගමන් කිරීමේදී ජලයේ ඇති මඩ අංශු හා වෙනත් ද්‍රව්‍ය වැලි අතර රැදීම හේතුවෙන් ජලය පෙරීමේ සීඝ්‍රතාවය ක්‍රමයෙන් අඩුවේ. මෙම අවස්තාවේදී වැලි පෙරණ තුළ ඇති ජලයේ උස වැඩිවීම සිදුවේ. මෙවන් අවස්ථාවලදී මෙම වැලි පෙරණ වල වැලි සේදීමකට ලක් කල යුතුය එය Backwash කිරීම ලෙස හදුන්වයි.<br>
+				<br> කඳන ජල පවිත්‍රාගාරයෙහි වැලි පෙරණ සේදීම ස්වංක්‍රීයවම (Auto Mode) යම් කිසි කාල පරාසයකින් (Time Base) පසුව හා වැලි පෙරණයෙහි ඇති ජලයේ උස (Level Base) අනුව ක්‍රියාත්මක වීම සිදුවේ. මීට අමතරව අවශ්‍යතාවය මත ඕනෑම වේලාවක (Manual Mode) සිදු කරීමේ හැකියාවද පවතී.<br><br>
+				</p>
+				<br>		
+		
+
+  <h2 class="text-sm md:text-lg font-bold mb-4">වැලි පෙරණ පිරිසිදු කිරීමේ (Backwashing) ක්‍රියාවලිය</h2>
+  
+  <ol class="list-decimal list-inside space-y-2 text-sm text-amber-800 leading-relaxed">
+    <li>වැලි පෙරණයට ජලය සපයන <strong>ඇතුළු දොරටුව (Inlet Gate)</strong> වසා, පෙරණය තුළ පවතින ජලය අඩුවෙන තෙක් රැඳී සිටීම.</li>
+    <li>ජල මට්ටම පහළ වූ විට <strong>කාණු දොරටුව (Drain Valve)</strong> විවෘත කර, ජලය බැස යාමට සැලැස්වීම හා පිටවීමේ දොරටුව(Outlet Gate) වැසීම.</li>
+    <li><strong>අධි පීඩන වායු</strong> ලබා දී, වැලි මත රැඳී ඇති මඩ හා දූවිලි කැලැත්තීම.</li>
+    <li>කැතුණු මඩ ඉවත් කිරීම සඳහා පෙරණය තුළට <strong>පිරිසිදු ජලය</strong> ලබා දීම.</li>
+    <li>නිකාස වන ජලය නිරීක්ෂණය කර, දුඹුරු වර්ණය ඉවත් වී පැහැදිලි වන තුරු Backwashing දිගටම කිරීම.</li>
+    <li>පැහැදිලි ජලය නිකාස් වූ පසු <strong>කාණු දොරටුව</strong> වැසීම.</li>
+    <li><strong>ඇතුළු දොරටුව (Inlet Gate)</strong> විවෘත කර, සාමාන්‍ය ජල සැපයුම ආරම්භ කිරීම.</li>
+    <li>අවසානයේ <strong>පිටවීමේ දොරටුව (Outlet Gate)</strong> විවෘත කර, පිරිසිදු ජලය ජල පරිභෝජන පද්ධතියට යැවීම.</li>
+  </ol>
+</section>
+		    <section class="card">
+                <h2 class="text-L md:text-L font-bold mb-4">
+                   Details of the Filtration System 
+                </h2>
+                <ul class="text-sm text-gray-700 text-justify">
+                    <li>
+			Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:	Constant-rate sand filter with influent splitting and varying water level<br>
+			No of Filters&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;: 8 Nos<br>
+                        Filter Dimensions&emsp;&emsp;&emsp;&emsp;&emsp;:	7.2m x 10.8 m (78 m2) <br>
+			Total Filtration Area&nbsp;&emsp;	&emsp;&emsp;&nbsp;&nbsp;:	624 m2 <br>
+			Filtration Rate&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; :	200 m/d (approx 270 m/d during washing) <br>
+			Filter Media&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;:	Crushed & Graded Rock (Sand), 1200 mm thickness <br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbspEffective media size = 1.0 to 1.2mm <br> 
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Uniformity Coefficient <1.5<br>
+			Filter Washing&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:	Combination of backwash & air scouring  <br>
+			Backwash Rate&nbsp;&nbsp;&nbsp;&emsp; &emsp;&emsp;&emsp;&emsp;: 0.25 m3/m2/min [3 pumps (2 duty, 1 standby)/ Rated capacity 162 l/s & 8m head<br>
+			Air-scoring&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: 1.0 m3/m2/min [3 Air Blowers (2 duty, 1 standby)/ rated capacity 650 l/s & 0.343 bars]<br>
+			Backwash Water Collection Tank Capacity&emsp;: 247 m3
+                    </li>
+                    
+                </ul>
+                
+            </section>
+
+            
+            <section class="card bg-gray-200 p-4 rounded-lg">
+                <h2 class="text-xl md:text-xl font-bold mb-4 text-brown-700 text-center">
+                    Sand Filters in Water Treatment Plants
+                </h2>
+                <ul class="text-sm text-sky-400 text-justify">
+                    <li>
+                        
+
+
+<ul class="text-sm text-sky-400 text-justify">
+                    <li>
+<br>Sand filters are one of the most commonly used filtration methods in water treatment plants. They play a key role in removing suspended solids, turbidity, and microorganisms from raw water, making it cleaner and safer for consumption.<br><br>
+<h2 class="text-L md:text-L font-bold mb-4">
+Working Principle
+</h2>
+<li>
+Sand filters work on a physical filtration process where water passes through multiple layers of sand and gravel. As the water flows downward:
+
+<br>&emsp;&emsp;* Larger particles get trapped on the upper layer.
+
+<br>&emsp;&emsp;* Smaller suspended particles are removed in the middle layers.
+
+<br>&emsp;&emsp;* The finest impurities and microorganisms are filtered out in the bottom layers.
+<br> This process not only improves water clarity but also reduces contaminants that affect taste and odor.<br><br>
+
+ </li>
+<div class="flex justify-center">
+  <img src="Image/Filter.JPG" alt="Image of Filter" class="rounded-lg shadow">
+</div>
+
+<h2 class="text-L md:text-L font-bold mb-4">
+<br><br>Types of Sand Filters
+</h2>
+&emsp;&emsp;&emsp;1. Slow Sand Filters (SSF):<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Operates at low flow rates.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Highly effective in removing bacteria and organic matter.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Requires a biological layer (schmutzdecke) on top for effective filtration.<br><br>
+
+&emsp;&emsp;&emsp;2. Rapid Sand Filters (RSF):<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Works at higher flow rates.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Requires frequent backwashing to clean the sand bed.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Often used in combination with coagulation and sedimentation.<br>
+
+<h2 class="text-L md:text-L font-bold mb-4">
+<br><br>Structure of a Sand Filter
+</h2>
+A typical sand filter unit includes:<br>
+&emsp;&emsp;&emsp;1. Inlet Chamber &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;– where raw water enters.<br>
+&emsp;&emsp;&emsp;2. Filter Bed &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;– layers of sand and gravel arranged from fine to coarse.<br>
+&emsp;&emsp;&emsp;3. Underdrain System &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;– collects the filtered water and prevents sand loss.<br>
+&emsp;&emsp;&emsp;4. Outlet/Filtered Water Tank &nbsp;&emsp;&nbsp;&nbsp;– stores treated water before further treatment or distribution.<br><br>
+
+
+<h2 class="text-L md:text-L font-bold mb-4">
+Advantages
+</h>
+
+<ul class="text-sm text-sky-400 text-justify">
+                    <li>
+<br>&emsp;&emsp;&emsp;* Simple and cost-effective.
+
+<br>&emsp;&emsp;&emsp;* Requires low maintenance compared to other filtration systems.
+
+<br>&emsp;&emsp;&emsp;* Provides good removal of turbidity, color, and microorganisms.
+
+<br>&emsp;&emsp;&emsp;* Can handle large volumes of water.
+</li>
+</section>
+
+
+           
+
+        </main>
+
+        <!-- Footer Section (Optional) -->
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>&copy; 2025 කඳන ජල ජලපවිත්‍රාගාරය. සියලුම හිමිකම් ඇවිරිණි.</p>
+        </footer>
+    </div>
+</body>
+</html>
