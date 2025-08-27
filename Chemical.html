@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>කඳන ජලපවිත්‍රාගාරය</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+        }
+        .container {
+            max-width: 960px; /* Max width for content */
+        }
+        /* Custom styles for better readability and aesthetics */
+        h1, h2 {
+            color: #1e3a8a; /* Dark blue for headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .image-container { /* Renamed from image-placeholder for clarity */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem; /* rounded-md */
+            margin-top: 1rem; /* mt-4 */
+            overflow: hidden; /* Ensures image respects border-radius */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below image */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+		@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.shimmer-text {
+  background: linear-gradient(to right, #3b82f6, #67e8f9, #2563eb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+    </style>
+</head>
+
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+        <!-- Header Section -->
+        <header class="flex items-center space-x-4 mb-10">
+    <!-- Logo -->
+    <img src="https://raw.githubusercontent.com/kwtp/wtp_kandana/refs/heads/main/NWSDB_logo.png" 
+         alt="Water Board Logo" class="w-20 h-20 object-contain">
+
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center shimmer-text">
+        Kandana Water Treatment Plant
+    </h1>
+</header>
+<nav class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-center gap-4">
+  <a href="index.html" class="text-blue-700 font-semibold hover:text-blue-500">Intake</a>
+  <a href="D_Chamber.html" class="text-blue-700 font-semibold hover:text-blue-500">D-Chamber</a>
+  <a href="Sedimentation.html" class="text-blue-700 font-semibold hover:text-blue-500">Sedimentation</a>
+  <a href="Filter.html" class="text-blue-700 font-semibold hover:text-blue-500">Filtration</a>
+  <a href="Sludge_Treatment.html" class="text-blue-700 font-semibold hover:text-blue-500">Sludge Treatment</a>
+  <a href="Chemical.html" class="text-blue-700 font-semibold hover:text-blue-500">Chemical</a>
+</nav>
+			<section class="card">
+			<h2 class="text-xl md:text-xl font-bold mb-4 text-left">
+    
+
+        <!-- Main Content Section -->
+        <main>
+            <section class="card">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center">
+    Chemical Preparation Process
+</h1>
+               <p class="text-sm text-gray-700 text-justify">
+                 කඳන ජලපවිත්‍රාගාරය තුළ ජලපවිත්‍රීකරණ ක්‍රියාවලිය සඳහා භාවිතා වන හුණු(Lime), ඇලම්(Alum) හා ක්ලෝරීන් සැකසීම හා ගබඩා කිරීම Chemical Building එක තුළදී සිදුකරයි.<br><br> 
+</p>
+<h2 class="text-lg md:text-xl font-bold mb-4">
+    01. Lime Preparation
+  </h2>
+<p class="text-sm text-gray-700 text-justify">
+ගඟෙන් ලබා ගන්නා අමු ජලයේ (Raw Water) හා පිරිසිදු කරගත් ජලයේ (Treated Water) pH අගය නියමිත පරාසයේ තබා ගැනීමට හුණු (Lime) යෙදීම සිදුකරන අතර මෙම හුණු පව්ඩර් ලෙස බෑග්වල අසුරා ගෙන එන අතර මේවා ජලයේ දිය කර අවශ්‍ය සාන්ද්‍රණයෙන් යුත් හුණු මිශ්‍රණයක් සාදා ගැනීම සිදුකරයි. මේ සඳහා ටැංකි හතරක් පවිත්‍රාගාරය තුළ පවතී. <br><br>
+මෙසේ සාදා ගන්නා හුණු මිශ්‍රණය Lime Transfer පොම්ප මගින් Pre Lime ටැංකිය වෙත හා Post Lime ටැංකිය වෙත Lime පොම්ප කිරීම සිදුකරයි. ඉන් පසු Pre Lime Dosing පොම්ප මගින් Pre Lime ජලයට එක් කිරීම සිදුකරන අතර Post Lime පොම්ප මගින් Lime Saturator  වෙත පොම්ප කිරීම සිදුකරයි.<br><br>
+
+		
+
+						<div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+    <figure>
+        <img src="Image/Lime_Tank .jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Lime Mixing Tanks with Dust Collectors</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Lime_Transfer_Pumps.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Lime Trasfer Pumps </figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Pre_Lime_Tank.jpeg" alt="Image of Sludge Valve" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Pre Lime Tank and Pre Lime Dosing Pumps</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Sludge_Valve (2).jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Post Lime Tank and Post Lime Dosing Pumps</figcaption>
+    </figure>
+</div>
+            </section>
+
+
+			
+            <section class="card p-4">
+  <h2 class="text-lg md:text-xl font-bold mb-4">
+    Details of the Lime Dosing system
+  </h2>
+  
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm text-gray-700 border-collapse">
+      <tbody>
+        <tr>
+          <td class="font-semibold pr-4">Lime Dissolving Tanks</td>
+          <td>04 Nos of 20m3 each. Equipped with vertical type propeller mixers, level sensors & top mounted dust collectors
+</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Lime Storage Capacity</td>
+          <td>Approximately 72 Tons (of 18kg containing bags)
+</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Lime Transfer Pumps</td>
+          <td>03 numbers (2 duty, 1 standby) of rated capacity - 2.3 l/s @ 13.7m head, <br>Rated power - 1.8 kW, with VSD controlled</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Lime dosing pumps</td>
+          <td>04 numbers (2 duty, 2 standby) of rated capacity - 2 l/s @ 14 m.head, <br>Rated power - 0.3 kW, with VSD controlled 
+		  </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</section>
+<Section>
+
+<h2 class="text-lg md:text-xl font-bold mb-4">
+    02. Alum Preparation
+  </h2>
+<p class="text-sm text-gray-700 text-justify">
+pH එක සකසා ගත් ගඟෙන් ලබාගත් අමුජලයෙහි ඇති ඉතා කුඩා මඩ අංශු මඩ කැටිති (flocks) බවට පත් කිරීමට යොදා ගනු ලබන ඇල්ම් හෙවත් aluminium sulphate කැට ලෙස ඇසුරුම් කල 25kg ඇසුරු ලෙස ලැබේ.
+<br>මෙම කැට ජලයේ දියකර ඇලම් ද්‍රාවණය සකසා ගත යුතුය. මෙම ඇලම් ජලයේ මිශ්‍ර කිරීම සඳහා ඇලම් මිශ්‍රණ ටැංකි හතරක් පවතී.<br><br>
+		
+
+						<div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+    <figure>
+        <img src="Image/Alum_Mixing_Tank.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Alum Mixing Tanks with Dust Collectors</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Alum_Dosing_Pump.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Alum Trasfer Pumps </figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Alum_Dis.jpeg" alt="Image of Sludge Valve" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Alum Distributor at D-Chamber</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Alum_Dosing.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Alum Dosing</figcaption>
+    </figure>
+</div>
+            </section>
+
+
+			
+            <section class="card p-4">
+  <h2 class="text-lg md:text-xl font-bold mb-4">
+    Details of the Alum Dosing system
+  </h2>
+  
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm text-gray-700 border-collapse">
+      <tbody>
+        <tr>
+          <td class="font-semibold pr-4">Alum Dissolving Tanks</td>
+          <td>04 Nos of 20 m3 each. Equipped with vertical type	propeller mixers, level sensors & top mounted dust collectors
+</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Alum Storage Capacity</td>
+          <td>Approximately 100 Tons (of 25kg containing bags)
+
+</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Alum Dosing Pumps</td>
+          <td>03 numbers (2 duty, 1 standby) of rated capacity - 2.3 l/s @ 13.7m head, <br>Rated power - 1.8 kW, with VSD controlled</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Lime dosing pumps</td>
+          <td>02 numbers (1 duty, 1 standby) of rated capacity - 2 l/s @ 14 m.		head, Rated power - 2.2 kW, with VSD controlled
+
+		  </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</section>
+<Section>
+
+<h2 class="text-lg md:text-xl font-bold mb-4">
+    03. Chlorine Dosing
+  </h2>
+<p class="text-sm text-gray-700 text-justify">
+ජලපවිත්‍රීකරණයේදී භාවිතා කරනු ලබන ක්ලොරීන් වායුව ලෙස 900kg ටැංකි වශයෙන් ගෙන එනු ලබන අතර ක්ලෝරිනේටර් (chlorinators) මගින් ජලයට මුසු කිරීම සිදුකරයි. 
+<br>එසේම යම් ක්ලෝරීන් කාන්දුවක් සිදුවුවහොත් එම ක්ලෝරීන් නිශ්ක්‍රීය කිරීමට ස්වංක්‍රීය නිශ්ක්‍රීය පද්ධතියකින්ද (Neutralizing System) කඳන ජලපවිත්‍රාගාරය සමන්විත වේ.
+<br><br>
+		
+
+						<div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+    <figure>
+        <img src="Image/Regulator.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Vacuum regulators</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Chlorine.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Chlorine Gas Tonner </figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Chlorinators.jpeg" alt="Image of Sludge Valve" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Chlorinators</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Nuclealize.jpeg" alt="Image of Sedimentation Tanks" class="rounded-lg shadow">
+        <figcaption class="text-center mt-2 text-sm text-gray-700">Neutralizing System</figcaption>
+    </figure>
+</div>
+            </section>
+
+
+            <section class="card p-4">
+  <h2 class="text-lg md:text-xl font-bold mb-4">
+    Details of the Chlorination system
+  </h2>
+  
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm text-gray-700 border-collapse">
+      <tbody>
+        <tr>
+          <td class="font-semibold pr-4">Gas chlorinators</td>
+          <td>06 Nos of  20 kg/hr gas chlorinators with 4 Nos of 20 kg/hr injectors
+
+</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Neutralizing system</td>
+          <td>Automatic leak detection and neutralizing system
+
+</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Header line</td>
+          <td>Connect tonner cylinders to the dosing system. Includes shutoff valves, Auxiliary valves & flexible hose. Quantity- 02 Nos (1 Duty, 1 Standby)</td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Pressure regulating Valves</td>
+          <td>Reduce gas pressure to the required level. Safe shutoff during gas leakage of power interruption </td>
+        </tr>
+        <tr>
+          <td class="font-semibold pr-4">Vacuum regulators</td>
+          <td>Shutoff chlorine supply in case of leakage in the vacuum side
+ </td>
+        </tr>
+		<tr>
+          <td class="font-semibold pr-4">Liquid trap & filter</td>
+          <td>Filtering of particles and evaporate liquid gas if presence </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>        
+            
+           
+        </main>
+
+        <!-- Footer Section (Optional) -->
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>&copy; 2025 කඳන ජල ජලපවිත්‍රාගාරය. සියලුම හිමිකම් ඇවිරිණි.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+

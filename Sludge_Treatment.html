@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>කඳන ජලපවිත්‍රාගාරය</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+        }
+        .container {
+            max-width: 960px; /* Max width for content */
+        }
+        /* Custom styles for better readability and aesthetics */
+        h1, h2 {
+            color: #1e3a8a; /* Dark blue for headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .image-container { /* Renamed from image-placeholder for clarity */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem; /* rounded-md */
+            margin-top: 1rem; /* mt-4 */
+            overflow: hidden; /* Ensures image respects border-radius */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below image */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+		@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.shimmer-text {
+  background: linear-gradient(to right, #3b82f6, #67e8f9, #2563eb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+    </style>
+</head>
+
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+        <!-- Header Section -->
+        <header class="flex items-center space-x-4 mb-10">
+    <!-- Logo -->
+    <img src="https://raw.githubusercontent.com/kwtp/wtp_kandana/refs/heads/main/NWSDB_logo.png" 
+         alt="Water Board Logo" class="w-20 h-20 object-contain">
+
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center shimmer-text">
+        Kandana Water Treatment Plant
+    </h1>
+</header>
+<nav class="max-w-6xl mx-auto px-4 py-3 flex justify-center space-x-6">
+        <a href="Index.html" class="text-blue-700 font-semibold hover:text-blue-500">Intake</a>
+        <a href="D_Chamber.html" class="text-blue-700 font-semibold hover:text-blue-500">D-Chamber</a>
+        <a href="Sedimentation.html" class="text-blue-700 font-semibold hover:text-blue-500">Sedimentation</a>
+        <a href="Filter.html" class="text-blue-700 font-semibold hover:text-blue-500">Filtration</a>
+    </nav>
+			<section class="card">
+			<h2 class="text-xl md:text-xl font-bold mb-4 text-left">
+    
+
+        <!-- Main Content Section -->
+        <main>
+            <section class="card">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center">
+    Sludge Treatment Process
+</h1>
+               <p class="text-sm text-gray-700 text-justify">
+                 Sedimentation ටැංකියෙහි තැම්පත් වන මඩ හා වැලි පෙරණ( sand filter) සේදීමෙන් ඉවත් වන මඩද පරිසරයට හානියක් නොවන ලෙස ඉවත්කල යුතු වෙනවා. මේ සඳහා මෙම මඩ වියලා ඉවත් කිරීම සිදුකරනවා. මෙම ක්‍රියාවලිය සඳහා පහත අංග කඳන ජලපවිත්‍රාගාරය තුළ පවතිනවා.
+					<br>1. Balancing Tank
+					<br>2. Backwash Recovery Tank
+					<br>3. Sludge Thickner
+					<br>4. Sludge Lagoons
+					<br>5. Polymer Preparation System
+<br><br> 
+<img src="Image/Flow_Diagram.jpg" alt="Sludge Treatment Flow Diagram" class="rounded-lg shadow">
+<h2 class="text-L md:text-L font-bold mb-4">
+<br>1. Sludge Balancing Tank
+</h2>
+<ul class="text-sm text-gray-700 text-justify">
+Sedimentation ටැංකියෙන් ඉවත් වන මඩ(Sludge) හා Backwash Recovery ටැංකියේ තැම්පත්වෙන මඩ Balancing Tank වෙත එකතුවේ. මෙසේ Balancing Tank වෙත එකතුවෙන මඩ Sludge Thickner වෙත පොම්ප කිරීම සිදුවේ. ඒ අතර තුරදී මෙම මඩ සමග පොලිමර් සම්මිශ්‍රණය කිරීම (Mixing) සිදුකරයි.<br><br>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <img src="Image/Balancing_Tank2.jpeg" alt="Image of Sludge Balancing_Tank1" class="rounded-lg shadow">
+        <img src="Image/Balancing_Tank1.jpeg" alt="Image of Sludge Balancing_Tank1" class="rounded-lg shadow">
+    
+          <ul class="text-sm text-gray-700 space-y-2">
+  <li class="flex">
+    <span class="w-56 font-medium">Capacity of Balancing Tank</span>
+    <span>8.8 × 3.6 × 3.7 m (L × W × H)</span>
+  </li>
+  <li class="flex">
+    <span class="w-56 font-medium">Capacity of Sludge Pumps</span>
+    <span>25.6 l/s @ 17 m head (2 Nos)</span>
+  </li>
+  <li class="flex">
+    <span class="w-56 font-medium">Capacity of Sludge Mixer</span>
+    <span>2.5 kW</span>
+  </li>
+</ul>
+		   </section>
+		   <section class="card">
+		   
+<h2 class="text-L md:text-L font-bold mb-4">
+<br>2. Backwash Recovery Tank
+</h2>
+<ul class="text-sm text-gray-700 text-justify">
+Sand filters සේදීමෙන් ඉවත්වන ජලය (Backwash water) මෙම Backwash Recovery ටැංකිය වෙත එකතු වෙන අතර එම ජලය මෙම ටැංකි තුල පැය කිහිපයක් පැහැදීම සඳහා තැබීමෙන් අනතුරුව පැහැදුම් ජලය(Supernatant Water) නැවත විභෙදුම් කුටිය (D-Chamber) වෙත පොම්ප කරන අතර එහි අඩියෙහි තැම්පත් වන මඩ(Sludge) මඩ පොම්ප(Sludge Pumps) මගින් Sludge Balancing ටැංකිය වෙත පොම්ප කිරීම සිදුකරයි.<br><br>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <img src="Image/Recovery_Tank1.jpeg" alt="Image of Recovery Tank " class="rounded-lg shadow">
+        <img src="Image/Recovery_Tank2.jpeg" alt="Image of Recovery Tank" class="rounded-lg shadow">
+    
+          <ul class="text-sm text-gray-700 space-y-2">
+  <li class="flex">
+    <span class="w-56 font-medium">Capacity of Recovery Tank</span>
+    <span>10 x 5 x 7m (LxWxH)x(2 Nos)</span>
+  </li>
+  <li class="flex">
+    <span class="w-56 font-medium">Capacity of Supernatant pumps</span>
+    <span>100 l/s @ 10 m head /18.5 kW (2 Nos)</span>
+  </li>
+  <li class="flex">
+    <span class="w-56 font-medium">Capacity of Sludge pumps</span>
+    <span>30 l/s  @ 15m head /18.5 kW (2 Nos)</span>
+  </li>
+</ul>
+		   </section>
+		   <section class="card">
+		   
+<h2 class="text-L md:text-L font-bold mb-4">
+<br>3. Sludge Thickner
+</h2>
+<ul class="text-sm text-gray-700 text-justify">
+මෙහිදී Sludge Balancing Tank වෙතින් ලැබෙන මඩ ඝනකරණය (Thick) කරයි. ඝන කළ මඩ Sludge Lagoon වෙත ගෙනයයි. පිරිසිදු කළ අපජලය කාණු පද්ධතියක් හරහා ගලා යාමට සලස්වයි.<br><br>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <img src="Image/Thickner1.jpeg" alt="Image of Thickner" class="rounded-lg shadow">
+        <img src="Image/Thickner2.jpeg" alt="Image of Thickner" class="rounded-lg shadow">
+    
+          <ul class="text-sm text-gray-700 space-y-2">
+  <li class="flex">
+    <span class="w-56 font-medium">Capacity of Recovery Tank</span>
+    <span>6mDia x 4m tanks(Approx. 113m3 x 2)(2 Nos)</span>
+  </li>
+ 
+</ul>
+</section>
+
+ <section class="card bg-gray-200 p-4 rounded-lg flex flex-col items-center justify-center min-h-[300px] relative">
+  
+  <!-- Heading at the top -->
+  <h2 class="text-xl md:text-xl font-bold mb-4 text-brown-700 text-center">
+    Structure of Thickner
+  </h2>
+
+  <!-- Image centered -->
+  <img src="Image/thickener3.jpg" 
+       alt="Image of Thickner Tanks" 
+       class="rounded-lg shadow max-h-[220px] object-contain mx-auto">
+</section>
+	   
+		   
+	 <section class="card">
+		   
+<h2 class="text-L md:text-L font-bold mb-4">
+<br>4. Sludge Lagoons
+</h2>
+<ul class="text-sm text-gray-700 text-justify">
+Sludge Thickner එකෙන් පිටකරනු ලැබූ ඝනවූ මඩ Sludge Lagoon වෙත යොමුකරයි. මෙහිදී මෙම මඩ වල ඇති ජලය හිරු රශ්මියෙන් හා සුළග භාවිතයෙන් ඉවත් කරයි. මෙසේ ජලය ඉවත් වී හොදින් වේලී පස් බවට පත්වූ මඩ පරිසර හිතකාමී ලෙස පරිසරයට මුදාහරී(Land Fillings).<br><br>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <img src="Image/Lagoon1.jpeg" alt="Image of Lagoon" class="rounded-lg shadow">
+        <img src="Image/Lagoon2.jpeg" alt="Image of Lagoon" class="rounded-lg shadow">
+    
+          <ul class="text-sm text-gray-700 space-y-2">
+  <li class="flex">
+    <span class="w-56 font-medium">Capacity of Sludge Lagoons</span>
+    <span>25 x 30 x 3m (WxLxD)(4 Nos)</span>
+  </li>
+  
+</ul>
+
+
+		   </section>		   
+		   
+       	 <section class="card">
+		   
+<h2 class="text-L md:text-L font-bold mb-4">
+<br>5. Polymer Preparation System
+</h2>
+<ul class="text-sm text-gray-700 text-justify">
+Balancing Tank එකෙන් පොම්ප කරනු ලබන මඩ වල ඝනත්වය වැඩි කිරීම සඳහා යොදා ගනු ලබන පොලිමර් මිශ්‍රණය සකස් කර ගැනීම හා ඒවා පොම්ප කිරීම මෙහිදී සිදුකරයි.<br><br>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <img src="Image/Polymer_System2.jpeg" alt="Image of Polymer Plant" class="rounded-lg shadow">
+        <img src="Image/Polymer_System1.jpeg" alt="Image of Polymer Dosing Pump" class="rounded-lg shadow">
+    
+          <ul class="text-sm text-gray-700 space-y-2">
+  <li class="flex">
+    <span class="w-60 font-medium">Polymer preparation system</span>
+    <span>02 Nos (semi automated)</span>
+  </li>
+  <li class="flex">
+    <span class="w-60 font-medium">Incidental Facilities</span>
+    <span>Booster pumps - 02Nos (VSD controlled)
+</span>
+  </li>
+  <li class="flex">
+    <span class="w-60 font-medium"></span>
+    <span>Dosing pumps - 02Nos(VSD controlled)
+</span>
+  </li>
+</ul>
+
+
+		   </section>		       
+
+        </main>
+
+        <!-- Footer Section (Optional) -->
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>&copy; 2025 කඳන ජල ජලපවිත්‍රාගාරය. සියලුම හිමිකම් ඇවිරිණි.</p>
+        </footer>
+    </div>
+</body>
+</html>
